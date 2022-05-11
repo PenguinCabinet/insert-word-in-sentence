@@ -2,7 +2,6 @@
 
 function one_make_str(input_text,first_word,insert_word,last_word){
     let input_data=input_text.split('');
-    console.log(input_data);
     let output_data=[first_word];
     let input_length_only_words=input_data.length-1;
     while(
