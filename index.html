@@ -1,0 +1,59 @@
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.14.1/dist/css/uikit.min.css" />
+
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.14.1/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.14.1/dist/js/uikit-icons.min.js"></script>
+
+    
+    <title>文の間に単語いれーる</title>
+    <link rel="icon" href="image/my_icon.png">
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="image/my_icon.png.png">
+
+    <meta property="og:url" content="https://iws.penguincabinet.com/" />
+ 
+    <meta property="og:type" content="website" />
+    
+    <meta property="og:title" content="文の間に単語いれーる" />
+    
+    <meta property="og:description" content="これは文の間に単語を挿入することのできるツールです" />
+    
+    <meta property="og:site_name" content="文の間に単語いれーる" />
+    
+    <meta property="og:image" content="image/my_icon.png" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+
+</head>
+<body>
+    <p>
+        <h1>文の間に単語いれーる</h1>
+    </p>
+    <form>
+        入力
+        <textarea rows="4" id="input_text" class="uk-textarea" type="text" placeholder="驚異の大爆死"></textarea>
+        最初の文字
+        <input id="first_word" class="uk-input" type="text" placeholder="">
+        間に入れる文字
+        <input id="insert_word" class="uk-input" type="text" placeholder="☆">
+        最後の文字
+        <input id="last_word" class="uk-input" type="text" placeholder="">
+    </form>
+    出力
+    <textarea rows="4" style="white-space: pre-wrap;" readonly id="out_text" class="uk-textarea" type="text" placeholder="驚☆異☆の☆大☆爆☆死"></textarea>
+    <div id="console"></div>
+    <p class="uk-text-muted" id="info">
+        これは文の間に指定の単語を挿入するツールです。<br/>
+        無保証です。<br/>
+        開発リポジトリは<a target="_blank" href="">こちら</a><br/>
+    </p>
+
+    <script src="main.js"></script>
+</body>
+</html>
