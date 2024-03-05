@@ -33,7 +33,7 @@ function make_str(input_text,first_word,insert_word,last_word){
     }).join("\n");
 }
 
-function make_str_rapper(){
+function make_str_wrapper(){
     let out_text=make_str(
         document.getElementById("input_text").value,
         document.getElementById("first_word").value,
@@ -47,11 +47,11 @@ function make_str_rapper(){
 .forEach(e => {
     document.getElementById(e).addEventListener(
         'keydown', 
-        make_str_rapper
+        make_str_wrapper 
     );
     document.getElementById(e).addEventListener(
         'change', 
-        make_str_rapper
+        make_str_wrapper 
     );
     
 });
